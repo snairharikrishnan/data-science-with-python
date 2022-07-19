@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
-import matplotlib.pyplot as plt
+#import matplotlib.pyplot as plt
+import sklearn
 from collections import Counter
 from mlxtend.frequent_patterns import apriori,association_rules
 
@@ -52,17 +53,3 @@ for i in unique_rules:
 rules_no_prof=rules.iloc[unique_index,:]
 rules_no_prof.sort_values('lift',ascending=False,inplace=True)
 rules_no_prof.head(10).iloc[:,[0,1,6]]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
